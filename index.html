@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <style>
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Column styles */
+        .column {
+            box-sizing: border-box;
+            width: 33.33%;
+            float: left;
+            padding: 20px;
+        }
+
+        /* Content styles */
+        .content {
+            background-color: #fff; /* added this line */
+            overflow: auto; /* added to contain floated columns */
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div style="display: flex;">
-        <div style="flex: 1; padding: 10px;">
-            <h1>Column 1</h1>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav><a href="#1" style="color: #fff;">Link 1</a> |
+    <a href="#2" style="color: #fff;">Link 2</a> |
+        <a href="#3" style="color: #fff;">Link 3</a></nav>
+
+    <div class="content">
+        <div class="column">
+            <h2>Column 1</h2>
             <p>This is the first column.</p>
         </div>
-        <div style="flex: 1; padding: 10px;">
-            <h1>Column 2</h1>
+
+        <div class="column">
+            <h2>Column 2</h2>
             <p>This is the second column.</p>
-        </div>
-        <div style="flex: 1; padding: 10px;">
-            <h1>Column 3</h1>
+
+        <div class="column">
+            <h2>Column 3</h2>
             <p>This is the third column.</p>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2022 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
